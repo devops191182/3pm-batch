@@ -26,4 +26,4 @@ Resources:
         - !GetAtt MySecurityGroup.GroupId # Associates the Security Group
       Tags:
         - Key: Name
-          Value: sys-via-pipeline
+          Value: new-name

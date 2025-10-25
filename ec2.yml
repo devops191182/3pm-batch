@@ -11,19 +11,15 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: 0.0.0.0/0 # Restrict this in production environments
-        - IpProtocol: tcp
-          FromPort: 80
-          ToPort: 80
-          CidrIp: 0.0.0.0/0 # Restrict this in production environments
 
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-0cfde0ea8edd312d4
+      ImageId: ami-0807bd3aff0ae7273
       InstanceType: t3.micro
-      KeyName: croma-aish-4
+      KeyName: ohio-new-11
       SecurityGroupIds:
         - !GetAtt MySecurityGroup.GroupId # Associates the Security Group
       Tags:
         - Key: Name
-          Value: new-name
+          Value: 3pm-sys

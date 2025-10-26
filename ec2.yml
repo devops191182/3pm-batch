@@ -22,4 +22,4 @@ Resources:
         - !GetAtt MySecurityGroup.GroupId # Associates the Security Group
       Tags:
         - Key: Name
-          Value: 3pm-system
+          Value: Amit-sys

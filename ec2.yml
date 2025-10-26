@@ -20,7 +20,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-0807bd3aff0ae7273
-      InstanceType: t3.micro
+      InstanceType: t3.medium
       KeyName: ohio-new-11
       SecurityGroupIds:
         - !GetAtt MySecurityGroup.GroupId # Associates the Security Group

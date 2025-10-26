@@ -11,10 +11,6 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: 0.0.0.0/0 # Restrict this in production environments
-        - IpProtocol: tcp
-          FromPort: 80
-          ToPort: 80
-          CidrIp: 0.0.0.0/0 # Restrict this in production environments
 
   MyEC2Instance:
     Type: AWS::EC2::Instance
@@ -26,4 +22,4 @@ Resources:
         - !GetAtt MySecurityGroup.GroupId # Associates the Security Group
       Tags:
         - Key: Name
-          Value: new-sys-trail
+          Value: 3pm-system

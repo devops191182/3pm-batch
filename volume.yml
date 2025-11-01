@@ -28,7 +28,7 @@ Resources:
             VolumeSize: 8
         - DeviceName: /dev/sdf
           Ebs:
-            VolumeSize: 20
+            VolumeSize: 40
             VolumeType: gp3
       Tags:
         - Key: Name
